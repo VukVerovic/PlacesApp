@@ -8,16 +8,16 @@ const UserItem = (props) => {
   return (
     <li className="user-item">
       <Card className="user-item__content">
-        <Link to={`/${props.id}/places`}>
+        <Link to={`/${props.user.id}/places`}>
           <div className="user-item__image">
-            <Avatar image={props.image} alt={props.name} />
+            <Avatar image={props.user.image} alt={props.user.name} />
           </div>
           <div className="user-item__info">
-            <h2> {props.name} </h2>
+            <h2> {props.user.name} </h2>
             <h3>
               {" "}
-              {props.placeCounter}{" "}
-              {props.placeCounter === 1 ? "Place" : "Places"}
+              {props.user.placeCounter}{" "}
+              {props.user.placeCounter === 1 ? "Place" : "Places"}
             </h3>
           </div>
         </Link>
