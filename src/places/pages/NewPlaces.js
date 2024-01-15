@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import Input from "../../shared/components/FormElements/Input";
 import "./NewPlaces.css";
 import Button from "../../shared/components/FormElements/Button";
 
