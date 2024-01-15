@@ -4,7 +4,8 @@ import Users from "./user/pages/Users";
 import NewPlaces from "./places/pages/NewPlaces";
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
-import UserPlaces from "./user/pages/UserPlaces";
+import UserPlaces from "./places/pages/UserPlaces";
+import UpdatePlace from "./places/pages/UpdatePlace";
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
           </Route>
           <Route path="/:userId/places" exact>
             <UserPlaces />
+          </Route>
+          <Route path="/places/:placeId" exact>
+            <UpdatePlace />
           </Route>
           <Redirect to="/" />
         </Switch>
